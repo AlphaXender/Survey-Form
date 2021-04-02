@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Interests Survey</title>
+</head>
+
+<body>
+  <!-- as it is a survey form, we will need to submit the details, hence we use form -->
+  <!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+  <form action="http://google.co.in">
+  <!-- If we remove this, every thing will move to the left of the page-->
+  <div align="center">
+    <!--Adds a heading to the form-->
+    <h1 align="center">Movie Interests Survey Form</h1>
+    Enter your name:
+    <!-- Input type text for small texts, specify size -->
+    <input type="text" name="UserNAme" size=35 maxlength=35 value="">
+    <!--Adds spaces - remove and see what happens -->
+    <br><br>
+    Enter your Age:
+    <input type="text" name="Age" size=35 maxlength=3 value=""><br><br>
+    Tell us about yourself:
+    <!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+    <textarea name="Comments" cols="30" rows="4"></textarea><br><br>
+    Do you watch movies?
+    <!-- Radio buttons help you choose one out of the many values -->
+    <input type="radio" name="exe" value=1>Yes
+    <input type="radio" name="exe" value=2>No
+    <br><br>
+
+    How do you like to watch movies?
+    <p>
+      <!--Checkbox lets you select multiple options -->
+      <input type="checkbox" name="Theatre"> Theatre
+      <input type="checkbox" name="Online Streaming"> Online Streaming
+      <input type="checkbox" name="Television"> Television
+
+    </p>
+
+    What genres of movies do you like?
+    <select name="moviepref">
+      <option selected="true">
+      <option value=1>comedy
+      <option value=2>romance
+      <option value=3>thriller
+      <option value=4>horror
+      <option value=5>biopic
+    </select>
+    <br><br>
+
+    <!--submits the information entered in the form by the user -->
+    <input type=submit value="Submit form">
+
+    
+
+
+  </div>
+  
+  
+  
+  </form>
+  
+</body>
+</html>
